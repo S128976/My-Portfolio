@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sean Francis | Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #d4f1f4, #fef9d7);
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #b2f0e3, #fceabb);
+      color: black;
+      padding: 15px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+        color: black;
+    }
+
+    nav {
+      background: linear-gradient(to right, #b2f0e3, #fceabb);
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    nav a {
+      color: black;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    img.profile {
+      width: 100px;
+      height: 100px;
+      max-width: 100%;
+      object-fit: cover;
+     border-radius: 50%;
+    }
+
+    .tag {
+      display: inline-block;
+      background-color: #e0f0ff;
+      padding: 8px 14px;
+      margin: 6px;
+      border-radius: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: linear-gradient(to right, #b2f0e3, #fceabb);
+      color: black;
+      padding: 12px;
+      border-radius: 5px;
+      text-decoration: none;
+      margin: 5px;
+      min-width: 150px;
+      text-align: center;
+    }
+
+    .btn:hover {
+       filter: brightness(0.9);
+       cursor: pointer;
+    }
+
+    footer {
+      background: linear-gradient(to right, #b2f0e3, #fceabb);
+      color: black;
+      text-align: center;
+      padding: 10px;
+    }
+
+    @media (max-width: 600px) {
+    section {
+    padding: 20px 10px;
+  }
+}
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Hi, I'm Sean Francis</h1>
+    <p>Student at Eastern Visayas State University, Carigara Campus</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#interests">Interests</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <img class="profile" src="seanprofilepic.jpg" alt="Sean Francis">
+    <h2>Personal Info</h2>
+    <p><strong>Name:</strong> Sean Francis R. Liwanag</p>
+    <p><strong>Birthday:</strong> September 25, 2005</p>
+    <p><strong>Address:</strong> Brgy. Jugaban, Carigara, Leyte</p>
+    <p><strong>Gender:</strong> Male</p>
+    <p><strong>Status:</strong> Single</p>
+  </section>
+
+  <section id="education">
+    <h2>Educational Background</h2>
+    <p>Elementary: Jugaban Elementary School, 2017–2018</p>
+    <p>Junior High: Carigara National Vocational School, 2020–2021</p>
+    <p>Senior High: Jugaban National High School, 2023–2024</p>
+    <p>College: EVSU Carigara Campus, 2024–Present</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <span class="tag">Computer Literate</span>
+    <span class="tag">Customer Service</span>
+    <span class="tag">Leadership</span>
+    <span class="tag">Encoding</span>
+  </section>
+
+  <section id="interests">
+    <h2>Interests</h2>
+    <span class="tag">Gaming</span>
+    <span class="tag">Music</span>
+    <span class="tag">Movies</span>
+    <span class="tag">Drawing</span>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <a href="https://www.facebook.com/seanfrancisranin.liwanag.3" class="btn">Facebook: Sean Rañin</a><br>
+    <a href="https://m.me/seanfrancisranin.liwanag.3" class="btn">Messenger: Sean Rañin</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sean Francis Rañin. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
